@@ -1,0 +1,6 @@
+<h1>Trees</h1>
+<section ng-controller="TreesController as treesController">
+	<ul>
+		<li ng-repeat="tree in treesController.allTrees"><a href="/trees/{{tree._id}}">{{tree.name}}</a></li>
+	</ul>
+</section>

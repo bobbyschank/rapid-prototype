@@ -16,12 +16,19 @@ function Trees($http) {
 	return treeMethods;
 }
 
-routingStuff.$inject = ['$routeProvider'];
-function routingStuff($routeProvider) {
+routingStuff.$inject = ['$routeProvider',  '$locationProvider'];
+function routingStuff($routeProvider,  $locationProvider) {
 	$routeProvider
 		.when('/', {
-			template: '<h1>MOMOMOMO</h1>'
+			templateUrl: '../templates/trees.html'
 		})
+		.when('/trees/:_id', {
+			templateUrl: '../templates/bark.html',
+		});
+		$locationProvider.html5Mode({
+      enabled: true,
+      requireBase: false
+    });
 }
 
 TreesController.$inject = ["Trees"];
