@@ -17,6 +17,18 @@ let treesList = [
 		name: 'Sycamore',
 		bark: 'dark brown in color at base of older trunks, shallowly furrowed into broad ridges which are broken up into small plate-like scales; higher up on trunk and branches, peeling off in large, thin plates exposing areas of whitish, yellowish, or greenish inner bark which are very striking in winter.'
 	},
+		{
+		name: 'Balsam fir',
+		bark: 'smooth, grayish brown in color, dotted with balsam blisters containing fragrant oily resin; in old trees becoming somewhat roughened with small scales.'
+	},
+	{
+		name: 'Paper birch',
+		bark: 'on young stems, golden to reddish brown in color, early becoming chalky white and peeling off in thin, papery layers, which once separated from the tree are never renewed. Because it is tough, resinous, durable, and impervious to water, it was the choice of all northern Indians for their canoes. Now it is the choice of the souvenir hunter.'
+	},
+	{
+		name: 'Red maple',
+		bark: 'on young trunks smooth, light gray in color, often resembling beech; with age becoming darker and roughened into long ridges, often shaggy or scaly on surface; bark character extremely variable on different trees in the same stand.'
+	},
 ];
 
 db.Tree.remove({}, function(err, cards) {
