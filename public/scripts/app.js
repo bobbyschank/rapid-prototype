@@ -62,14 +62,4 @@ function TreesController(Trees) {
 
 
 }
-
-
-
-
-
-
-
-
-
-
 console.log('At the bottom');
